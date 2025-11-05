@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Mail } from "lucide-react";
+import { Instagram, Linkedin, Mail, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,6 +15,14 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-6">
+            <a
+              href="https://wa.me/5511999999999"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 transform duration-300"
+            >
+              <MessageCircle size={24} />
+            </a>
             <a
               href="https://instagram.com"
               target="_blank"

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Instagram, Linkedin, Mail } from "lucide-react";
+import { Instagram, Linkedin, Mail, MessageCircle } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -59,6 +59,14 @@ const Hero = () => {
           </div>
 
           <div className="flex gap-6 justify-center pt-8">
+            <a
+              href="https://wa.me/5511999999999"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors hover:scale-110 transform duration-300"
+            >
+              <MessageCircle size={28} />
+            </a>
             <a
               href="https://instagram.com"
               target="_blank"

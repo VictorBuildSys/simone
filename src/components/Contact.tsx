@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Instagram, Linkedin, Mail, Phone, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -24,6 +24,12 @@ const Contact = () => {
   };
 
   const contactInfo = [
+    {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      value: "+55 (11) 99999-9999",
+      link: "https://wa.me/5511999999999",
+    },
     {
       icon: Mail,
       label: "Email",
