@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import imgSC from "@/assets/sc.jpg";
 
 const About = () => {
   const scrollToSection = (id: string) => {
@@ -13,7 +14,7 @@ const About = () => {
           <div className="relative animate-fade-in">
             <div className="aspect-square rounded-2xl overflow-hidden border-4 border-primary shadow-gold">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop"
+                src={imgSC}
                 alt="Simone Calisto"
                 className="w-full h-full object-cover"
               />

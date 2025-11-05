@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Instagram, Linkedin, Mail, Phone ,MessageCircle} from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -24,17 +24,23 @@ const Contact = () => {
   };
 
   const contactInfo = [
+     {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      value: "+55 (31) 9679-9362",
+      link: "https://wa.me/5531996799362",
+    },
     {
       icon: Mail,
       label: "Email",
-      value: "contato@simonecalisto.com",
-      link: "mailto:contato@simonecalisto.com",
+      value: "SimoneCalisto@gmail.com",
+      link: "mailto:contato@SimoneCalisto@gmail.com",
     },
     {
       icon: Phone,
       label: "Telefone",
-      value: "+55 (11) 99999-9999",
-      link: "tel:+5511999999999",
+      value: "+55 (31) 99679-9362",
+      link: "tel:+5531996799362",
     },
     {
       icon: Instagram,
